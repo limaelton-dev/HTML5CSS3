@@ -1,0 +1,285 @@
+body{
+    font-family: 'Montaga', serif;
+}
+
+header{
+    background: #CCCCCC;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative; /*fazemos isso porque o "nav" ta com uma posição absoluta, então precisamos dar uma posição relativa para esses itens, assim eles serão movidos*/
+    width: 940px;
+    margin: 0 auto;     /*Centraliza um conteúdo*/
+}
+
+h1 a{
+    text-decoration: none;
+    color:#000000;
+}
+
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline-block;                /*Alinha o menu*/
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;  /*tira decoração padrão que sublinha links*/
+}
+
+nav a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block; /*FAZ COM QUE OS ITENS FIQUEM EM UMA LINHA, UM AO LADO DO OUTRO, e nao abaixo como padrão*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background: #CCCCCC;*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*Pesquisar, mas muda a forma que o navegador calcula as margens*/
+    border: 2px solid #000000; /*tamanho tipo cor da borda*/
+    border-radius: 15px;
+
+}
+
+.produtos li:hover{                 /*Quando passo o mouse por cima*/
+    border-color: red;
+}
+
+.produtos li:active{                /*Quando pressiono tecla do mouse*/
+    border-color: green;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descricao{
+    font-size: 18px;
+}
+
+.preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+footer{
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px;
+}
+
+.copy{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+
+form {
+    margin: 40px 150px;
+}
+
+form label, form legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;     /*largura do botao*/
+    padding: 15px 0;    /*espaçamento interno do botao aultura/lados */
+    background: darkred;    /*cor do botao*/
+    color: white;   /*cor da fonte*/
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px; /*Coloca borda arredondada*/
+    transition: 1s all; /*adiciona um tempo de transição quando o mouse está por cima*/
+    cursor: pointer; /*transforma o ponteiro do mouse em uma mãozinha*/
+}
+
+.enviar:hover{
+    background: red;
+    transform: scale(1.1); /*aumenta o botao na escala de 10%, conforme passado por parametro*/
+}
+
+table{
+    margin: 20px 150px;
+
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+    font-weight: center;
+}
+
+td, th{
+    border: 1px solid black; /*borda: tamanho, tipo, cor*/
+    padding: 8px 15px;
+
+}
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /*"em" multiplica o tamanho princpal pelo seu numero antecessor*/
+    margin: 0 0 1em;
+    clear: left; /*limpa o float*/
+    font-weight: bold;
+    /*text-shadow: 1.5px 1.5px rgb(254, 135, 135); cria uma sombra no texto*/
+}
+
+ .titulo-principal:first-letter { /*Seleciona a primeira letra "first-letter"*/
+    font-size: 2em;
+} 
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 130px;
+    float: left; /*para o elemento flutuar, mas deixando uma sombra, onde nada pode estar em baixo*/
+    margin: 0 20px 20px 0; /*cima, direita, baixo, esquerda*/
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE , #888888);
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.itens{
+    line-height: 1.5; /*altura da linha*/
+}
+
+.itens:before{ /* conteúdos apenas para exibição, não selecionável, tem o before e o after*/
+    content:"⁕";
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.img-beneficios{
+    width: 60%;
+    opacity: 1;
+    box-shadow: 10px 10px 5px 0 #000000; /*cria uma sombra (x,y, opacidade ,expansão da sombra,cor)  PARA CRIAR SOMBRA INTER USA-SE "inset"*/
+}
+
+.img-beneficios:hover{
+    opacity: 0.3;       /*muda a opacidade do elemento*/
+    transition: 1s;
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .lista-beneficios, .img-beneficios{
+        width:100%;
+        text-align: center;
+    }
+
+}

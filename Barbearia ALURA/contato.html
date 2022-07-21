@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="body-contato">
+        <header>
+            <div class="caixa">
+                <h1 class="titulo-principal"><a href="index.html">Barbearia Alura</a></h1>
+                <h1><a href="index.html"><img src="logo.png" alt="Logotipo"></a></h1>
+                <nav>   <!--Essa tag é geralmente usada para criar um menu de navegação-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form> <!--tag para formulário-->
+                <label for="nome">Nome</label><!--precisamos de uma etiqueta para saber sobre o que se trata-->
+                <input type="text" id="nome" class="input-padrao" required><!--e um tipo de entrada, com um ID e classe para se formatado no CSS-->
+
+                <label for="email">E-mail</label><!-- não esquecer do FOR-->
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>                                          <!--placeholder, sugere como preencher o campo-->
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(00)00000-0000"><!--type tel e email, são para auxiliar no celular-->
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                <fieldset><!--essa tag é tipo um div, mas específico para dados a serem preenchidos-->
+                    <legend>Como prefere o nosso contato?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label> <!-- checked marca essa opção-->
+                    
+                </fieldset>
+                    
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend><!--legend é igual um "p", mas para o fieldset. Um titulo-->
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <table><!--tag para tabelas-->
+                <thead><!--marca o cabeçalho-->
+                    <tr> <!--"table row", tr são as linhas da tabela-->
+                        <th>Dia</th><!--table head, marca as colunas do cabeçalho-->
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody><!--Corpo da tabela-->
+                    <tr> 
+                        <td>Segunda</td><!--"table date", td são as colunas-->
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr> 
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr> 
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+              
+            </table>
+        </main>
+
+        <footer><!--Rodapé-->
+            <img src="logo-branco.png" alt="Logotipo">
+            <p class="copy">&copy; Copyright Eltinho programador 2022</p>
+        </footer>
+    </body>
+        
+</html>

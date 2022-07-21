@@ -1,0 +1,113 @@
+  /*esse arquivo geralmente é usado como padrão em várias páginas de um site, e deve ser referenciado*/
+header{
+    background: #CCCCCC;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative; /*fazemos isso porque o "nav" ta com uma posição absoluta, então precisamos dar uma posição relativa para esses itens, assim eles serão movidos*/
+    width: 940px;
+    margin: 0 auto;     /*Centraliza um conteúdo*/
+}
+
+h1 a{
+    text-decoration: none;
+    color:#000000;
+}
+
+.titulo-principal{
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display:inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav a:hover{
+    color: red;
+    text-decoration: underline;
+
+}
+
+#banner
+{
+    margin:10px 0 10px;
+    width: 100%;
+}
+
+.principal{
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+
+.titulo-centralizado{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+p{
+    text-align: center;
+}
+
+#missao{
+    font-size: 18px;
+}
+
+em strong{
+    color: red;
+}
+
+.itens{
+    font-style: italic;
+}
+
+.beneficios{
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+
+.lista-beneficios{
+    display: inline-block; /*para que possa ter conteúdo ao lado das listas*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 1%;
+    margin-left: 250px;
+    margin-top:50px;
+}
+
+.imgbeneficios{
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px;
+}
+
+.copy{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
