@@ -13,7 +13,7 @@ body{
     display: flex;
     justify-content: space-between; /*Mexe com os elementos na horizontal. tira margem lateral e redistribui igualmente entre os elementos*/ 
     align-items: center;
-    background-color: #1D232A;
+    background-color: #15191C;
     padding: 8px 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16) ;
 }
@@ -148,7 +148,7 @@ body{
     color: #95999C;
 }
 
-.cartao__info--tempo::befpre{
+.cartao__info--tempo::before{
     content: "\e90c";
     margin-right: 8px;
 }
