@@ -4,7 +4,7 @@ header{
     padding: 20px 0;
 }
 
-.caixa{
+.cabecalho{
     position: relative; /*fazemos isso porque o "nav" ta com uma posição absoluta, então precisamos dar uma posição relativa para esses itens, assim eles serão movidos*/
     width: 940px;
     margin: 0 auto;     /*Centraliza um conteúdo*/
@@ -102,7 +102,7 @@ em strong{
 
 footer{
     text-align: center;
-    background: url("bg.jpg");
+    background: url("../imagens/bg.jpg");
     padding: 40px;
 }
 

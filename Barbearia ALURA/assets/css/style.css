@@ -7,20 +7,34 @@ header{
     padding: 20px 0;
 }
 
-.caixa{
+.caixa--cabecalho {
+    border-bottom: 2px solid #000000;
+    box-shadow: 10px 10px 5px 0 #000000;
+}
+
+.cabecalho{
     position: relative; /*fazemos isso porque o "nav" ta com uma posição absoluta, então precisamos dar uma posição relativa para esses itens, assim eles serão movidos*/
     width: 940px;
     margin: 0 auto;     /*Centraliza um conteúdo*/
+    display: grid;
+    grid-template-columns: auto;
 }
 
-h1 a{
+.cabecalho__logo--link {
+    align-self:  center;
+    justify-self: center;
+}
+
+.cabecalho__logo{
     text-decoration: none;
     color:#000000;
+    width: 100px;
 }
 
 
-nav{
-    position: absolute;
+.cabecalho__menu{
+    align-self: center;
+    justify-self: center ;
     top: 110px;
     right: 0;
 }
@@ -94,7 +108,7 @@ nav a:hover{
 
 footer{
     text-align: center;
-    background: url("bg.jpg");
+    background: url("../imagens/bg.jpg");
     padding: 40px;
 }
 
@@ -167,6 +181,7 @@ td, th{
 }
 
 .titulo-principal{
+    display:none;
     text-align: center;
     font-size: 2em; /*"em" multiplica o tamanho princpal pelo seu numero antecessor*/
     margin: 0 0 1em;
