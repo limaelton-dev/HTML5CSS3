@@ -177,6 +177,12 @@ body{
     gap: 16px;
 }
 
+@media screen and (min-width: 1440px) {
+    .principal {
+        padding:100px 60px;
+    }
+}
+
 .titulo-pagina {
     font-size: 1.5rem;
     font-weight: 700;
