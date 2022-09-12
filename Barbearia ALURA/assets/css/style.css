@@ -169,39 +169,44 @@ td, th{
     /*text-shadow: 1.5px 1.5px rgb(254, 135, 135); cria uma sombra no texto*/
 }
 
-.principal{
-    border-radius: 30px;
-    background: #FEFEFE;
-    width: 940px;
-    margin: 2rem auto;
-}
-
 .cartao__principal {
 
-    border:#000000;
+    border-radius: 30px;
+    width: 940px;
+    margin: 2rem auto;
+    background: #99958A;
+    box-shadow: 0px 2px 5px 0px #99958aee;
 }
 
 .cartao__principal--banner {
     width: 100%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-
 }
 
 .cartao__principal--conteudo {
     display: grid;  
-        grid-template-columns: auto 1fr;
-        grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
+    padding-top: 20px;
+    
 }
 
 .cartao__principal--imagem-utensilios {
     width: 130px;
+    padding: 10px;
+    border-radius: 50%;
+    align-self: center;
+    border-right: 4px solid #000000;
 }
 
 .cartao__principal--texto {
-    grid-column: span 1;
-    font-size: 1.3rem;
-    color: red;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 20px;
+    text-transform: uppercase;
+    line-height: 150%;
+    
+    
 }
 
 
