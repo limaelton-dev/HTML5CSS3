@@ -1,15 +1,16 @@
 body{
     font-family: 'Montaga', serif;
+    background-color: #BEBCB6;
 }
 
 header{
-    background: #CCCCCC;
+    background: #99958A;
     padding: 20px 0;
+    margin-bottom: 10px;
 }
 
 .caixa--cabecalho {
-    border-bottom: 2px solid #000000;
-    box-shadow: 10px 10px 5px 0 #000000;
+    box-shadow: 0px 2px 5px 0px #99958aee;
 }
 
 .cabecalho{
@@ -113,7 +114,7 @@ footer{
 }
 
 .copy{
-    color: #FFFFFF;
+    color: #99958A;
     font-size: 13px;
     margin: 20px 0 0;
 }
@@ -176,10 +177,6 @@ td, th{
 
 }
 
-.banner{
-    width: 100%;
-}
-
 .titulo-principal{
     display:none;
     text-align: center;
@@ -198,7 +195,16 @@ td, th{
     padding: 3em 0;
     background: #FEFEFE;
     width: 940px;
-    margin: 0 auto;
+    margin: 2rem auto;
+}
+
+.cartao__principal {
+    border-radius: 10px;
+    border:#000000;
+}
+
+.cartao__principal--banner {
+    width: 100%;
 }
 
 .principal p{
@@ -221,7 +227,7 @@ td, th{
 
 .mapa{
     padding: 3em 0;
-    background: linear-gradient(#FEFEFE , #888888);
+    background: linear-gradient(#BEBCB6 , #98958C);
 }
 
 .mapa-conteudo{
@@ -236,7 +242,7 @@ td, th{
 
 .beneficios{
     padding: 3em 0;
-    background: #888888;
+    background: linear-gradient(#98958C , #716E62);;
 }
 
 .conteudo-beneficios{
