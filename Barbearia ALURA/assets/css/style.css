@@ -1,5 +1,5 @@
 body{
-    font-family: 'Montaga', serif;
+    font-family: 'Noto Sans', sans-serif;
     background-color: #BEBCB6;
 }
 
@@ -159,23 +159,13 @@ td, th{
 
 }
 
-.titulo-principal{
-    display:none;
-    text-align: center;
-    font-size: 2em; /*"em" multiplica o tamanho princpal pelo seu numero antecessor*/
-    margin: 0 0 1em;
-    clear: left; /*limpa o float*/
-    font-weight: bold;
-    /*text-shadow: 1.5px 1.5px rgb(254, 135, 135); cria uma sombra no texto*/
-}
-
 .cartao__principal {
 
     border-radius: 30px;
     width: 940px;
     margin: 2rem auto;
     background: #99958A;
-    box-shadow: 0px 2px 5px 0px #99958aee;
+    box-shadow: 0px 5px 10px 2px #99958aee;
 }
 
 .cartao__principal--banner {
@@ -185,10 +175,17 @@ td, th{
 }
 
 .cartao__principal--conteudo {
-    display: grid;  
-    grid-template-columns: auto 1fr;
+    display: grid;
     padding-top: 20px;
-    
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.cartao__principal--titulo {
+    font-size: 1.5em;
+    font-weight: 800;
+    justify-self: center;
+    grid-column: span 2;
 }
 
 .cartao__principal--imagem-utensilios {
@@ -200,59 +197,77 @@ td, th{
 }
 
 .cartao__principal--texto {
+    display: block;
     font-size: 1rem;
     font-weight: 700;
     padding: 20px;
     text-transform: uppercase;
     line-height: 150%;
-    
-    
+    text-indent: 30px;
 }
 
 
-.mapa{
+.secao__mapa{
     padding: 3em 0;
     background: linear-gradient(#BEBCB6 , #98958C);
 }
 
+.titulo-mapa{
+    text-align: center;
+    font-size: 1.5em; /*"em" multiplica o tamanho princpal pelo seu numero antecessor*/
+    margin: 0 0 1em;
+    font-weight: 800;
+}
+
 .mapa-conteudo{
+    border-radius: 10px;
     width: 940px;
     margin: 0 auto;
 }
 
-.mapa p{
+.secao__mapa p{
     margin: 0 0 2em;
     text-align: center;
 }
 
-.beneficios{
-    padding: 3em 0;
-    background: linear-gradient(#98958C , #716E62);;
+.secao__beneficios{
+    padding: 3em auto;
+    background: linear-gradient(#98958C , #716E62);
+    display: inline;
 }
 
-.conteudo-beneficios{
+.secao__beneficios--titulo {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+    padding: 25px;
+}
+
+.secao__beneficios--conteudo{
     width: 640px;
     margin: 0 auto;
 }
 
-.lista-beneficios{
+.secao__beneficios--conteudo-lista{
     width: 40%;
     display: inline-block;
     vertical-align: top;
 
 }
 
-.itens{
-    line-height: 1.5; /*altura da linha*/
+.secao__beneficios--conteudo-itens{
+    line-height: 1.5; /*altura da linha, espaçamento entre linhas*/
+
 }
 
-.itens:before{ /* conteúdos apenas para exibição, não selecionável, tem o before e o after*/
+.secao__beneficios--conteudo-itens:before{ /* conteúdos apenas para exibição, não selecionável, tem o before e o after*/
     content:"⁕";
+    padding: 2px;
 }
 
-.itens:first-child{
-    font-weight: bold;
-}
+.secao__beneficios--conteudo-itens:first-child{ 
+    padding-top: 45px;
+} 
 
 .img-beneficios{
     width: 60%;
