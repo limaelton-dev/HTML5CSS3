@@ -27,7 +27,7 @@
             </div>
         </header>
 
-        <main>
+        <main class="principal-contato">
             <form> <!--tag para formulário-->
                 <label for="nome">Nome</label><!--precisamos de uma etiqueta para saber sobre o que se trata-->
                 <input type="text" id="nome" class="input-padrao" required><!--e um tipo de entrada, com um ID e classe para se formatado no CSS-->
@@ -39,7 +39,7 @@
                 <input type="tel" id="telefone" class="input-padrao" required placeholder="(00)00000-0000"><!--type tel e email, são para auxiliar no celular-->
 
                 <label for="mensagem">Mensagem</label>
-                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                <textarea cols="50" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
                 <fieldset><!--essa tag é tipo um div, mas específico para dados a serem preenchidos-->
                     <legend>Como prefere o nosso contato?</legend>
@@ -64,30 +64,31 @@
 
                 <input type="submit" value="Enviar formulário" class="enviar">
             </form>
+            <div class="div--table">
+                <table class="tabela-horarios"><!--tag para tabelas-->
+                    <thead><!--marca o cabeçalho-->
+                        <tr> <!--"table row", tr são as linhas da tabela-->
+                            <th>Dia</th><!--table head, marca as colunas do cabeçalho-->
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody><!--Corpo da tabela-->
+                        <tr> 
+                            <td>Segunda</td><!--"table date", td são as colunas-->
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr> 
+                            <td>Quarta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr> 
+                            <td>Sexta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                    </tbody>  
+                </table>
+            </div>
 
-            <table><!--tag para tabelas-->
-                <thead><!--marca o cabeçalho-->
-                    <tr> <!--"table row", tr são as linhas da tabela-->
-                        <th>Dia</th><!--table head, marca as colunas do cabeçalho-->
-                        <th>Horário</th>
-                    </tr>
-                </thead>
-                <tbody><!--Corpo da tabela-->
-                    <tr> 
-                        <td>Segunda</td><!--"table date", td são as colunas-->
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr> 
-                        <td>Quarta</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr> 
-                        <td>Sexta</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                </tbody>
-              
-            </table>
         </main>
 
         <footer><!--Rodapé-->

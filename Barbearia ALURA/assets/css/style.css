@@ -402,6 +402,33 @@ footer{
         width: 100%;
     }
 
+    .principal-contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form label, form legend {
+        font-size: 10px;
+        margin: 0 0 10px;
+    }
+    .input-padrao {
+        display: block;
+        margin: 0 0 20px;
+        padding: 5px 50px;
+    }
+
+    .div--table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    input::placeholder {
+        color: transparent;
+    }
 
     @media screen and (max-width: 318px){
 
