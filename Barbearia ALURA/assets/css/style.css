@@ -46,14 +46,17 @@ nav li{
 nav a{
     text-transform: uppercase;
     color: #000000;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 22px;
     text-decoration: none;  /*tira decoração padrão que sublinha links*/
+    transition: 0.5s;
 }
 
 nav a:hover{
     color: red;
     text-decoration: underline;
+    letter-spacing: 0.15em;
+    transition: 0.5s;
 }
 
 
@@ -234,7 +237,7 @@ td, th{
 
 .secao__beneficios{
     background: linear-gradient(#98958C , #716E62);
-    
+    overflow: hidden;
 }
 
 .secao__beneficios--titulo {
