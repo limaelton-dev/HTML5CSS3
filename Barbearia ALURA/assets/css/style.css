@@ -19,12 +19,9 @@ body{
     grid-template-columns: auto;
 }
 
-.cabecalho__logo--link {
+.cabecalho__logo{
     align-self:  center;
     justify-self: center;
-}
-
-.cabecalho__logo{
     text-decoration: none;
     color:#000000;
     width: 100px;
@@ -201,7 +198,7 @@ td, th{
     border-right: 4px solid #000000;
 }
 
-.cartao__principal--texto {
+.cartao__principal--texto--paragrafo{
     display: block;
     font-size: 1rem;
     font-weight: 700;
@@ -303,22 +300,113 @@ footer{
 
 
 
-@media screen and (max-width: 480px){
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+@media screen and (max-width: 980px){
+    .cabecalho, .secao__mapa, .principal-produtos{
         width: auto;
     }
 
-    h1{
+    .cabecalho__logo {
+        width: 65px;
+    }
+
+    .cabecalho__lista-itens {
+        font-size: 1.1rem;
+    }
+
+    .cartao__principal{
+        margin: 1.5em;
+        width: auto;
+    }
+
+    .cartao__principal--conteudo {
+        text-align:center ;
+    }
+
+    .cartao__principal--titulo {
+        font-size: 1.1rem;
+    }
+
+    .cartao__principal--texto--paragrafo{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    .cartao__principal--imagem-utensilios {
+        display: none;
+    }
+
+    .titulo-mapa {
+        font-size: 1.1rem;
+    }
+
+    .paragrafo-mapa {
+        font-size: 0.8rem;
+    }
+
+    .mapa-conteudo {
+        margin: 1.5rem;
+        width: auto;
+    }
+
+    .secao-beneficios {
+        width: max-content;
+    }
+
+    .secao__beneficios--titulo {
+        font-size: 1.2rem;
+    }
+
+    .secao__beneficios--conteudo {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .img-beneficios{
+        width: 80%;
+    }
+
+    .secao__beneficios--conteudo-lista{
+        flex-wrap: nowrap;
+        margin: 1rem 1.5rem;
         text-align: center;
     }
 
-    nav{
-        position: static;
+    .secao__beneficios--conteudo-itens:first-child{ 
+        padding-top: 0;
     }
 
-    .lista-beneficios, .img-beneficios{
-        width:100%;
-        text-align: center;
+    .video {
+        margin: 1rem 1.5rem;
+        width: auto;
     }
 
+    .produtos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 20px;
+
+    }
+
+    .produtos li{
+        justify-self:center;
+        width: 90%;
+        margin-bottom: 0.5rem;
+    }
+
+    .produtos--itens img {
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+
+    @media screen and (max-width: 318px){
+
+        .cabecalho__lista-itens {
+            font-size: 0.64rem;
+        }
+    }
 }
