@@ -414,6 +414,7 @@ footer{
         margin: 0 0 10px;
     }
     .input-padrao {
+        width: 200px;
         display: block;
         margin: 0 0 20px;
         padding: 5px 50px;
