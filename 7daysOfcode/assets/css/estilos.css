@@ -1,0 +1,16 @@
+body {
+    background-color: #FFFF;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    color: #101828;
+}
+
+.narbar {
+    width: 1440px;;
+}
+
+.navbar__container {
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: row;
+}
