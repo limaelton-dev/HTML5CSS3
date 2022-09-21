@@ -1,90 +1,44 @@
-body {
-    background-color: #FFFF;
+:root {
+    --text-color: #667085;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    color: #101828;
-}
-
-.navbar {
-    height: 40px;
-    padding: 1rem;
-    display: flex;
-}
-
-.navbar__container {
+  }
+  
+  body {
     width: 100%;
+    height: 100vh;
+  }
+  
+  nav {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-
-}
-
-.navbar__logo {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-
-}
-
-.navbar__logo--titulo {
-    color: #3A404E;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-
-}
-
-.navbar__logo--img {
-    padding: 0.4rem;
-}
-
-.navbar__paginas {
-    margin: 20px;
-    justify-self: flex-start;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.navbar__paginas--itens {
-    width: 60%;
-    padding: 0 20px;
-    font-size: 16px;
+    padding: 1rem 0;
+  }
+  
+  .links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 2rem;
+  }
+  
+  button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
     font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
-    color: #667085;
-    flex-wrap: nowrap;
-}
-
-.navbar__paginas--sobre {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.navbar__botoes {
-    text-decoration: none;
-    display: flex;
-    gap: 8px;
-}
-
-.navbar__botao {
-    gap: 8px;
-}
-
-.navbar__botoes--entrar {
-    font-size: 16px;
-    font-weight: 500;
-    color: #667085;
-    text-decoration: none;
-    align-self: center;
-}
-
-.navbar__botoes--cadastrar {
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
+  
+  button#signUp {
     background-color: #8E2424;
-    color: #FFFF;
-    padding: 10px 18px;
-    border: 1px solid #8E2424;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-    border-radius: 8px;
-    
-}
+    color: #FFF;
+  }
